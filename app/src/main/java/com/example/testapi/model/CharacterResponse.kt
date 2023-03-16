@@ -1,5 +1,5 @@
 package com.example.testapi.model
-
+import androidx.compose.runtime.mutableStateListOf
 import com.google.gson.annotations.SerializedName
 
 data class CharacterResponse(
@@ -30,3 +30,6 @@ data class Wand(
     val core: String? = null,
     val length: Double? = null
 )
+
+ val listData= mutableStateListOf<CharacterResponse>()
+

@@ -27,6 +27,7 @@ class MainViewModel : ViewModel() {
                     call: Call<List<CharacterResponse>>,
                     response: Response<List<CharacterResponse>>
                 ) {
+                    println("======== work 2 ==========")
                     if (response.isSuccessful) {
                         val body = response.body() ?: emptyList()
                         println("onResponse")
